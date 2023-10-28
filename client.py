@@ -1,7 +1,5 @@
 import requests
 body = {
-    "Year" : 2014,
-    "Mileage" : 35725,
     "City" : "El Paso",
     "State" : "TX",
     "Vin" : "19VDE2E53EE000083",
