@@ -18,9 +18,9 @@ jobs:
     - name: imprimir url
       run: "${{github.event.client_payload.dataseturl}}"
     - name: download dataset
-      run: wget -O data/heart-disease.csv "${{github.event.client_payload.dataseturl}}"
+      run: wget -O data/train.csv "${{github.event.client_payload.dataseturl}}"
     - name: cat dataset
-      run: head data/heart-disease.csv
+      run: head data/train.csv
     - name: train model
       run: python model/train.py
     - name: docker build

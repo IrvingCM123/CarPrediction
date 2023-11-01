@@ -19,7 +19,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Create a RandomForestRegressor model
 print('Training model.. ')
-regressor = RandomForestRegressor(n_estimators=100, max_depth=10, random_state=0)  # Adjust the values here
+regressor = RandomForestRegressor(n_estimators=40, max_depth=15, random_state=0)  # Adjust the values here
 regressor.fit(X_train, y_train)
 
 # Save the trained model
